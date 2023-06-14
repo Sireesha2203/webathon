@@ -2,37 +2,49 @@ import React,{useEffect, useState} from 'react';
 import {useForm} from 'react-hook-form';
 import "./EntrepreneurRegister.css";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 function EntrepreneurRegister() {
   let { register, handleSubmit, formState: { errors } } = useForm();
-  let [auth,setAuth]=useState(false)
   let navigate=useNavigate();
-  let func=()=>{
-    if (Object.keys(errors).length === 0 && errors.constructor === Object) {
-        setAuth(true);
-    }
-  }
-  useEffect(() => {
-    {auth && navigate('../Login')}
-    
-  }, [func])
-  
+  let [error,setError]=useState("")
   let submitForm=(userObj)=>{
-    fetch("http://localhost:4000/Entrepreneurusers",{
-        method:"POST",
-        headers:{
-            'Content-Type':'application/json'
-        },
-        body:JSON.stringify(userObj)
-    })
-    .catch(err=>console.log("err is ",err))
-    console.log(userObj);
-    };
+    axios
+      .post("http://localhost:3500/user-api/user-signup",userObj)
+      .then((response)=>{
+        console.log("response is",response)
+        if(response.status===201){
+          //navigate to login component
+          navigate('../login')
+        }
+        if(response.status!==201) {
+          setError(response.data.message)
+          console.log(error)
+        }
+      })
+      .catch((err)=>{
+        //the client was given an error response
+        if(err.response){
+          setError(err.message);
+        }
+        //the client never received a response
+        else if(err.request){
+          setError(err.message);
+        }
+        //for other error
+        else{
+          setError(err.message);
+        }
+      })
+  }
+
+  console.log("error",error)
   
   return (    
     <div className="reg container">
       <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); </style>
       <h1 className="head display-3">Registration Form </h1>
+      {error.length!==0 && <p className='display-1 text-danger text-center'>{error}</p>}
       <form onSubmit={handleSubmit(submitForm)}>
         <div className="container fluid">
             <div className="row row-cols-1 row-cols-lg-2">
@@ -107,7 +119,7 @@ function EntrepreneurRegister() {
             </div>
             <div className="row row-cols-6">
                 <div className="col c1 mx-auto">
-                    <button  className="btn  btn-warning text-dark" type="submit" onClick={()=>func()}>Submit</button>
+                    <button  className="btn  btn-warning text-dark" type="submit">Submit</button>
                 </div>
             </div>
         </div>
