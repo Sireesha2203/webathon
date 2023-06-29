@@ -8,9 +8,7 @@ function RouteLayout() {
   return (
     <div>
       <Navi/>
-    
       <Outlet/>
-    
       <Footer/>
     </div>
   )

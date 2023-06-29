@@ -141,19 +141,25 @@
   ],
   "ideas": [
     {
-      "username":"sathvik",
+      "username": "sathvik",
       "ideaname": "shopping through barcodes",
       "idea": "Now a days shopping has become a daily activity mainly for girls.\nWhen ever they want to buy something they click a photo and store it once they had money they will buy it. But through Scanning bar codes to find the product and save the link.",
       "link": "https://www.youtube.com/watch?v=OjqGEUgNWmU",
       "id": 1
     },
     {
-      "username":"shashidhar",
+      "username": "shashidhar",
       "ideaname": "shopping through barcodes",
       "idea": "Now a days shopping has become a daily activity mainly for girls.\nWhen ever they want to buy something they click a photo and store it once they had money they will buy it. But through Scanning bar codes to find the product and save the link.",
       "link": "https://www.youtube.com/watch?v=OjqGEUgNWmU",
       "id": 2
+    },
+    {
+      "ideaname": "shopping through barcodes",
+      "idea": "ikl;';lkl;'",
+      "username": "shashidhar7682",
+      "link": "https://www.youtube.com/watch?v=OjqGEUgNWmU",
+      "id": 3
     }
-    
   ]
 }
