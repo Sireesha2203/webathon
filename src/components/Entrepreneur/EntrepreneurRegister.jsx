@@ -10,14 +10,13 @@ function EntrepreneurRegister() {
   let [error,setError]=useState("")
   let submitForm=(userObj)=>{
     axios
-      .post("http://localhost:3500/user-api/user-signup",userObj)
+      .post("http://localhost:5000/user-api/user-signup",userObj)
       .then((response)=>{
-        console.log("response is",response)
         if(response.status===201){
           //navigate to login component
           navigate('../login')
         }
-        if(response.status!==201) {
+        else{
           setError(response.data.message)
           console.log(error)
         }
@@ -37,14 +36,12 @@ function EntrepreneurRegister() {
         }
       })
   }
-
-  console.log("error",error)
   
   return (    
     <div className="reg container">
       <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); </style>
       <h1 className="head display-3">Registration Form </h1>
-      {error.length!==0 && <p className='display-1 text-danger text-center'>{error}</p>}
+      {error.length!==0 && <p className='display-3 text-danger text-center'>{error.message}</p>}
       <form onSubmit={handleSubmit(submitForm)}>
         <div className="container fluid">
             <div className="row row-cols-1 row-cols-lg-2">
