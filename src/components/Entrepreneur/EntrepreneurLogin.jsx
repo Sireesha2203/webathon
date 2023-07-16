@@ -3,7 +3,7 @@ import {useForm} from "react-hook-form"
 import { useNavigate } from 'react-router-dom';
 import './EntrepreneurLogin.css'
 import axios from 'axios';
-import { loginContext } from '../../contexts/LoginContext';
+import { loginContext } from '../../contexts/loginContext';
 
 
 function EntrepreneurLogin() {
@@ -41,7 +41,7 @@ function EntrepreneurLogin() {
         placeholder='Username' {...register("username",{required:{value:true,message:"* Username is required"}
         ,minLength:{value:4,message:"* please type atleast 4 characters"}
         ,maxLength:{value:20,message:"* Sorry you cannot use more than 20 characters"}})}>
-      </input>
+      </input> 
 
        {errors.username?.message ? <p className="text-danger">{errors.username?.message}</p>:<p className='mt-2'><br/></p>}
 
