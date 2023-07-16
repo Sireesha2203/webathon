@@ -1,0 +1,159 @@
+{
+  "Investusers": [],
+  "Entrepreneurusers": [
+    {
+      "firstname": "SHASHIDHAR",
+      "lastname": "katanguri",
+      "username": "shashidhar7682",
+      "password": "siri",
+      "birthday": "2004-01-22",
+      "gender": "male",
+      "mail": "shashidhar7682@gmail.com",
+      "phonenumber": "9059175240",
+      "subject": "Agricultural",
+      "id": 1
+    },
+    {
+      "username": "bhavishya",
+      "password": "232304",
+      "firstname": "Bhavishya",
+      "lastname": "Kolloori",
+      "birthday": "2005-09-23",
+      "gender": "female",
+      "mail": "bhavishyakolloori@gmail.com",
+      "phonenumber": "8309420984",
+      "subject": "cse",
+      "id": 2
+    },
+    {
+      "firstname": "Sathvik",
+      "lastname": "Kunuru",
+      "birthday": "2004-04-24",
+      "gender": "male",
+      "mail": "kunurusathvik4@gmail.com",
+      "phonenumber": "7569438572",
+      "subject": "ece",
+      "id": 3,
+      "username": "sathvik",
+      "password": "2004"
+    }
+  ],
+  "Mentorusers": [
+    {
+      "username": "sylasya",
+      "password": "sylasya",
+      "first name": "sylasya",
+      "Last name": "mamadi",
+      "Location": "hyderabad",
+      "College": "VNRVJIET",
+      "Degree": "biomedical",
+      "Specilization": "btech",
+      "id": 1
+    },
+    {
+      "username": "kunurusathvik4+1@gmail.com",
+      "password": "slkndle",
+      "first name": "n kds a",
+      "Last name": "mnb cwen",
+      "Location": "kjdsnbk",
+      "College": "kdjsnbak",
+      "Degree": "ndsd",
+      "Specilization": "lsknl",
+      "id": 2
+    },
+    {
+      "username": "kunurusathvik4@gmail.com",
+      "password": "ejh",
+      "first name": "",
+      "Last name": "mnb cwen",
+      "Location": "kjdsnbk",
+      "College": "kdjsnbak",
+      "Degree": "ndsd",
+      "Specilization": "lsknl",
+      "id": 3
+    },
+    {
+      "username": "sathvik2004",
+      "password": "openkey",
+      "first name": "kunuru",
+      "Last name": "sathvik",
+      "Location": "hyderabad",
+      "College": "vnrvjiet",
+      "Degree": "btech",
+      "Specilization": "ece",
+      "id": 4
+    },
+    {
+      "username": "bhavishya",
+      "password": "bhavishya23",
+      "first name": "kolloori",
+      "Last name": "bhavishya",
+      "Location": "hyderabad",
+      "College": "VNR VJIET",
+      "Degree": "BTECH",
+      "Specilization": "ECE",
+      "id": 6
+    },
+    {
+      "username": "abcd",
+      "password": "abcd",
+      "first name": "abcd",
+      "Last name": "efgh",
+      "Location": "delhi",
+      "College": "chlihd",
+      "Degree": "sldd",
+      "Specilization": "wkdjo",
+      "id": 7
+    },
+    {
+      "username": "abcd",
+      "password": "abcd",
+      "first name": "abcd",
+      "Last name": "efgh",
+      "Location": "delhi",
+      "College": "chlihd",
+      "Degree": "sldd",
+      "Specilization": "wkdjo",
+      "id": 8
+    },
+    {
+      "username": "abcd",
+      "password": "abcd",
+      "first name": "abcd",
+      "Last name": "efgh",
+      "Location": "delhi",
+      "College": "chlihd",
+      "Degree": "sldd",
+      "Specilization": "wkdjo",
+      "id": 9
+    },
+    {
+      "username": "abcd",
+      "password": "abcd",
+      "first name": "abcd",
+      "Last name": "efgh",
+      "Location": "delhi",
+      "College": "chlihd",
+      "Degree": "sldd",
+      "Specilization": "wkdjo",
+      "id": 10
+    }
+  ],
+  "ideas": [
+    {
+      "username":"sathvik",
+      "ideaname": "shopping through barcodes",
+      "idea": "Now a days shopping has become a daily activity mainly for girls.\nWhen ever they want to buy something they click a photo and store it once they had money they will buy it. But through Scanning bar codes to find the product and save the link.",
+      "link": "https://www.youtube.com/watch?v=OjqGEUgNWmU",
+      "id": 1
+    },
+    {
+      "username":"shashidhar",
+      "ideaname": "shopping through barcodes",
+      "idea": "Now a days shopping has become a daily activity mainly for girls.\nWhen ever they want to buy something they click a photo and store it once they had money they will buy it. But through Scanning bar codes to find the product and save the link.",
+      "link": "https://www.youtube.com/watch?v=OjqGEUgNWmU",
+      "id": 2
+    }
+    
+  ]
+}

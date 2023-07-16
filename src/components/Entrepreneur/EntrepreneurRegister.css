@@ -1,0 +1,40 @@
+.reg{
+    border-radius: 15px;
+    max-width: 50%;
+    background-color: white;
+    padding:25px;
+}
+.head{
+    font-family: 'Roboto', sans-serif;
+    padding:25px;
+    text-align: center;
+}
+.c1{
+    padding-top: 20px;
+    padding-left: 27px;
+    padding-right: 27px;
+    font-size: 27px;
+}
+.btner1{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#subject{
+    font-size: 20px;
+}
+.btner1{
+    background-color:aliceblue;
+    color: white;
+    
+}
+
+.btner1:hover{
+    background-color:aliceblue;
+    color: white;
+    
+}
+.reg{
+    background-color:aliceblue;
+}

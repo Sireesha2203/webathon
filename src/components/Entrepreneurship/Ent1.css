@@ -1,0 +1,12 @@
+.btne1{
+    background-color:red;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+.btne1:hover{
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+}

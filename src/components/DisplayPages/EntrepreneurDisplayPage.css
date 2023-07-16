@@ -1,0 +1,12 @@
+.card-footer {
+    display: none;
+  }
+  
+  .card:hover {
+    border-color: yellow;
+    border-width: 3px;
+  }
+  .card:hover .card-footer {
+    display:block;
+    position:relative;
+  }
