@@ -1,9 +1,10 @@
 //CREATE EXPRES APP
 const exp = require("express")
 const app=exp()
-
+require('dotenv').config()
+const port=process.env.PORT||3500
 //assign port number
-app.listen(3500,()=>console.log("server is listening to the portnumber 3500"))
+app.listen(port,()=>console.log("server is listening to the portnumber ",port))
 
 
 const path=require("path")
