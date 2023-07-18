@@ -5,3 +5,18 @@
     top: 0;
     width: 100%;
 }
+.logo{
+    object-fit: cover;
+  
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(213, 156, 101) ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+.nav-link{
+    color: rgb(213, 156, 101) ;
+    font-weight: 500;
+}  
