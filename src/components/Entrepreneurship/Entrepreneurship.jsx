@@ -1,11 +1,11 @@
 import {React} from 'react';
 import {useForm} from 'react-hook-form';
 import Countdown from 'react-countdown';
-import { Outlet } from 'react-router-dom';
+// import { Outlet } from 'react-router-dom';
 import "./Entrepreneurship.css"
 
 function Entrepreneurship() {
-  const locale = 'en';
+  // const locale = 'en';
   const today = new Date();
   const hour = today.getHours(); 
   const minute=today.getMinutes();

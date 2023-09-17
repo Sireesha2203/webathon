@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import {useForm} from "react-hook-form"
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import './EntrepreneurLogin.css'
-import axios from 'axios';
+// import axios from 'axios';
 import { loginContext } from '../../contexts/loginContext';
 
 
@@ -11,10 +11,10 @@ function EntrepreneurLogin() {
   let [selectedUser,loginUser,userLoginStatus,loginErr]=useContext(loginContext)
 
     //error state
-    let [error, setError]=useState("")
+    // let [error, setError]=useState("")
 
     //navigate
-    const navigate=useNavigate();
+    // const navigate=useNavigate();
     let {
       register,
       handleSubmit,

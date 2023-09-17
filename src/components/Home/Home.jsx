@@ -1,6 +1,7 @@
-import React,{ useRef, useEffect }  from 'react'
- import {BiRightArrow,BiLeftArrow} from "react-icons/bi"
- import home from './home.svg'
+// import React,{ useRef, useEffect }  from 'react'
+import React  from 'react'
+import {BiRightArrow,BiLeftArrow} from "react-icons/bi"
+// import home from './home.svg'
 import Carousel from 'react-bootstrap/Carousel'
 import "./Home.css"
 import Cards from './Cards.jsx';
