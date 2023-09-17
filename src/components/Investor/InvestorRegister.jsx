@@ -1,21 +1,20 @@
-import React,{useEffect, useState} from 'react';
+import React from 'react';
 import {useForm} from 'react-hook-form';
 import "./InvestorRegister.css";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 function EntrepreneurRegister() {
   let { register, handleSubmit, formState: { errors } } = useForm();
-  let [auth,setAuth]=useState(false)
-  let navigate=useNavigate();
-  let func=()=>{
-    if (Object.keys(errors).length === 0 && errors.constructor === Object) {
-        setAuth(true);
-    }
-  }
-  useEffect(() => {
-    {auth && navigate('../Login')}
-    
-  }, [func])
+//   let [auth,setAuth]=useState(false)
+//   let navigate=useNavigate();
+//   let func=()=>{
+//     if (Object.keys(errors).length === 0 && errors.constructor === Object) {
+//         // setAuth(true);
+//     }
+//   }
+//   useEffect(() => {
+//     {auth && navigate('../Login')}
+//   }, [func])
   
   let submitForm=(userObj)=>{
     fetch("http://localhost:4000/Investorusers",{
@@ -107,7 +106,8 @@ function EntrepreneurRegister() {
             </div>
             <div className="row row-cols-6">
                 <div className="col c1 mx-auto">
-                    <button  className="btn  btn-warning text-dark" type="submit" onClick={()=>func()}>Submit</button>
+                    {/* <button  className="btn  btn-warning text-dark" type="submit" onClick={()=>func()}>Submit</button> */}
+                    <button  className="btn  btn-warning text-dark" type="submit">Submit</button>
                 </div>
             </div>
         </div>

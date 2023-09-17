@@ -25,7 +25,6 @@ function Home() {
     <Carousel className="co" style={{ margin: "auto", display: "flex", justifyContent: "center", alignItems: "center" }}>
       <Carousel.Item interval={1000}>
         <img
-        
           className="overlay co-img"
           src="images/collage.jpg"
           alt="First slide"
@@ -39,7 +38,6 @@ function Home() {
      
       <Carousel.Item interval={500}>
         <img
-      
           className="overlay co-img"
           src="images/entrep.jpg "
           alt="Second slide" 

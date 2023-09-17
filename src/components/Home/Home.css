@@ -128,7 +128,7 @@
 .caption{
     background-color: rgba(0,0,0,0.7); /* Adjust the alpha value (0.5) to control opacity */
     color: #fff; 
-    border-radius: 7px;
+    border-radius: 20px;
     /* color: rgb(214, 159, 114); */
 }
 .carousel-caption {
