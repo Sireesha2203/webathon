@@ -3,7 +3,14 @@
     margin-top: 10%;
     background: none;
     color: rgb(213, 156, 101);
-    
+    border-radius: 10%;
+    border-color: rgb(213, 156, 101);
+    border-width: medium;
+    box-shadow: 1px 1px 1px rgb(72, 69, 69);
+    top: 50%;
+}
+.card-style:hover{
+    border-color:  black !important;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .card-style{

@@ -1,22 +1,23 @@
-import React from 'react'
-// import {BiRightArrow,BiLeftArrow} from "react-icons/bi"
-// import home from './home.svg'
+import React,{ useRef, useEffect }  from 'react'
+ import {BiRightArrow,BiLeftArrow} from "react-icons/bi"
+ import home from './home.svg'
 import Carousel from 'react-bootstrap/Carousel'
 import "./Home.css"
 import Cards from './Cards.jsx';
 
 function Home() {
+  
   let first={
     title : "Entrepreneurship",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae temporibus nemo quo sequi cum odit numquam dolores amet cumque dolorem.numquam dolores amet cumque dolorem." 
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae temporibus nemo quo sequi cum odit numquam dolores amet cumque dolorem.numquam dolores amet cumque dolorem.numquam dolores amet cumque dolorem." 
   }
   let second={
     title : "Mentorship",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae temporibus nemo quo sequi cum odit numquam dolores amet cumque dolorem.numquam dolores amet cumque dolorem." 
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae temporibus nemo quo sequi cum odit numquam dolores amet cumque dolorem.numquam dolores amet cumque dolorem.numquam dolores amet cumque dolorem." 
   }
   let third={
     title : "sponsorship",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae temporibus nemo quo sequi cum odit numquam dolores amet cumque dolorem.numquam dolores amet cumque dolorem." 
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae temporibus nemo quo sequi cum odit numquam dolores amet cumque dolorem.numquam dolores amet cumque dolorem.numquam dolores amet cumque dolorem." 
   }
   return (
     <div>
@@ -24,13 +25,14 @@ function Home() {
     <Carousel className="co" style={{ margin: "auto", display: "flex", justifyContent: "center", alignItems: "center" }}>
       <Carousel.Item interval={1000}>
         <img
+        
           className="overlay co-img"
           src="images/collage.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
           <div className="caption p-5"  >
-            <h1> <span className='start'>E</span>ntrepreneurship <br/> <span className='start'>M</span>entorship <br /> <span className='start'>S</span>ponsorship </h1>
+            <h1> <span  className='start'>E</span>ntrepreneurship <br/> <span  className='start'>M</span>entorship <br /> <span  className='start'>S</span>ponsorship </h1>
            
           </div>
           
@@ -39,6 +41,7 @@ function Home() {
      
       <Carousel.Item interval={500}>
         <img
+      
           className="overlay co-img"
           src="images/entrep.jpg "
           alt="Second slide" 
@@ -54,6 +57,7 @@ function Home() {
       </Carousel.Item>
       <Carousel.Item>
         <img
+       
           className="overlay co-img"
           src="images/mentor.jpg "
           alt="Third slide"
@@ -68,6 +72,7 @@ function Home() {
       </Carousel.Item>
       <Carousel.Item>
         <img
+          
           className="overlay co-img" 
           src="images/investors.jpg "
           alt="Third slide"
@@ -98,18 +103,27 @@ function Home() {
         </div>        
       </div> */}
 
+      <div className="card-container">
+        {/* <img className='bgforpgm' width="100%" height="550px" src="images/bgforpgm.jpg" alt="" /> */}       
+        <Cards data={first}/>
+        <Cards data={second}/>
+        <Cards data={third}/>     
+      </div>
 
-{/*       
-      <div id="routemap">
-        <br className='mb-5'/>
-        <br className='mb-5'/>
-        <h2 className='text-center text-white fs-1 mb-5'>Road Map</h2>
+      <h1 className='roadmaph' > Kick start your Startup Journey </h1>
+
+      <div id="routemap" >
+
+        <h2 className='rh text-center  fs-1 mb-5'>Road Map</h2>
+
         <div id='cont' className='d-flex flex-column'>
         <div id='b1' className='bg-white rounded d-block m-1 p-5 fs-5 fst-italic'>
           <p><span className='me-3'></span>Create Your Profile</p>
         </div> <BiRightArrow className='arrow1'size="2rem"/>
+
         <div id='b2' className='bg-white rounded d-block m-1 p-5 fs-4 fst-italic'><p>Present Your Idea</p></div>
-        <div id='line'></div><BiLeftArrow className='arrow2'size="2rem"/>
+        <div id='line'></div>
+        <BiLeftArrow className='arrow2'size="2rem"/>
         <div id='b3' className='bg-white rounded m-1 p-5 fs-4 fst-italic '><p>Get Approved</p></div>
         <BiRightArrow className='arrow1'size="2rem"/>
         <div id='b4' className='bg-white rounded m-1 p-5 fs-4 fst-italic'><p>Funding</p></div>
@@ -117,18 +131,8 @@ function Home() {
         <br className='mt-5 mb-5'/>
         <br className='mt-5 mb-5'/>
         <br className='mb-5'/>
-        <br className='mb-5'/>
+ 
         </div>
-      </div> */}
-    
-
-      <div className="card-container">
-        {/* <img className='bgforpgm' width="100%" height="550px" src="images/bgforpgm.jpg" alt="" /> */}
-        
-        <Cards data={first}/>
-        <Cards data={second}/>
-        <Cards data={third}/>
-        
       </div>
 
     </div>

@@ -8,19 +8,23 @@
 
 #b1,#b2,#b3,#b4{
     min-width:300px;
-    text-align: center;
-    background-color: whitesmoke;
-}
+    text-align: center;   
+    background: linear-gradient(80deg,rgb(195, 120, 50),rgb(196, 118, 45),rgb(156, 79, 8));
 
+}
+.rh{
+    color: rgb(228, 228, 226);
+}
 #routemap{
     min-height: 150%;
     padding-top: 4%;
     width: 100%;
-    background-color: #0a103d;
-    background: linear-gradient(80deg,#0d09f0, #7f009fe2, #01060d);
+    background-color: rgb(41, 42, 46);
+/* 
+    background: linear-gradient(80deg,rgb(195, 120, 50),rgb(196, 118, 45),rgb(156, 79, 8));
     background-size: 600% 600%;
-    animation: AnimationName 29s ease infinite;
-    animation-delay: 10s;
+    animation: AnimationName 20s ease infinite;
+    animation-delay: 10s; */
 }
 
 
@@ -37,12 +41,10 @@
 #line{
     width: 600px;
     height: 5px;
-    background-color: white;
+    background-color: rgb(228, 228, 226);
     animation: rotate 2s 1;
     position: relative;
     transform: rotate(90deg);
-    
-
 }
 @keyframes rotate{
     0% {transform: rotate(0deg);} 100%{transform: rotate(90deg);}
@@ -53,45 +55,45 @@
     padding-bottom: 16%;
 }
 
-@keyframes AnimationName { 
+/* @keyframes AnimationName { 
     0%{background-position:0% 51%}
     50%{background-position:100% 50%}
     100%{background-position:0% 51%}
-}
+} */
 
 #main-text{
    padding-top: 100px;
    padding-left: 50px;
    position: relative;
 }
-#e1{
-    padding-left: 100px;
-    position: relative;
-    animation: slide1 5s 1;
-
+#b1{
+    animation: slide1 3s 1;
 }
-#e2{
-    padding-left: 350px;
-    position: relative;
-    animation: slide2 3.6s 1;
+#b2{
+    animation: slide2 2.5s 1;
 }
-#e3{
-    padding-left: 500px;
-    position: relative;
-    animation: slide3 3s 1;
+#b3{
+    animation: slide3 2s 1;
+}
+#b4{
+    animation: slide4 1.5s 1;
 }
 
 @keyframes slide1{
 
-    from{left:-100px } to {left:00px} 
+    from{left:-400px } to {left:-300px} 
 }
 @keyframes slide2{
 
-    from{left:-200px } to {left:0px} 
+    from{left:400px } to {left:300px} 
 }
 @keyframes slide3{
 
-    from{left:-300px } to {left:0px} 
+    from{left:-400px } to {left:-300px} 
+}
+@keyframes slide4{
+
+    from{left:400px } to {left:300px} 
 }
 
 
@@ -108,6 +110,7 @@
     right:-8%;
     color: white;
 }
+
 .overlay{
     opacity: 0.3;
     background-color: black;
@@ -164,6 +167,16 @@
     padding-bottom: 12%;
     
 }
+.roadmaph{
+    background-image: url(./roadbg.jpg);
+    margin: auto;
+    padding: 5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: rgb(196, 118, 45);
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
     .co-img{
