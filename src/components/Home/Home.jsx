@@ -33,9 +33,7 @@ function Home() {
         <Carousel.Caption>
           <div className="caption p-5"  >
             <h1> <span  className='start'>E</span>ntrepreneurship <br/> <span  className='start'>M</span>entorship <br /> <span  className='start'>S</span>ponsorship </h1>
-           
           </div>
-          
         </Carousel.Caption>
       </Carousel.Item>
      
@@ -52,12 +50,11 @@ function Home() {
             <i className='quote'>-"Think big. Start small."</i>
             <button className='btn1 btn-white'>Register </button>
         </div>
-        
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
-       
           className="overlay co-img"
           src="images/mentor.jpg "
           alt="Third slide"
@@ -67,12 +64,11 @@ function Home() {
             <h1>Be a Mentor</h1><i className='quote'>-"Make a difference"</i>
             <button className='btn1 btn-white '>Register </button>
         </div>
-        
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
-          
           className="overlay co-img" 
           src="images/investors.jpg "
           alt="Third slide"
@@ -83,7 +79,6 @@ function Home() {
             <i className='quote'>-"Invest in success"</i>
             <button className='btn1 btn-white'>Register </button>
         </div>
-        
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
