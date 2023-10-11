@@ -18,21 +18,20 @@ function MentorRegister() {
   return (
     <div class="container w-50">
       <h2>Mentor Sign Up</h2>
-         <form onSubmit={handleSubmit(SignUp)} class="needs-validation" novalidate>
-      
+      <form onSubmit={handleSubmit(SignUp)} class="needs-validation" novalidate>
         <input type="text" className='form-control rounded  m-4 mx-auto' placeholder='username' name="username"{...register("username")}>
         </input>
         <input type="password" className='form-control rounded  m-4 mx-auto' placeholder='password' {...register("password")}>
         </input>
         <div className=' row'>
-        <div className='col-sm-6'>
-        <input type="text" className='form-control rounded  m-4 mx-auto' placeholder='First name' {...register("first name")}>
-        </input>
-        </div>
-        <div className='col-sm-6'>
-        <input type="text" className='form-control rounded  m-4 mx-auto' placeholder='Last name' {...register("Last name")}>
-        </input>
-        </div>
+          <div className='col-sm-6'>
+            <input type="text" className='form-control rounded  m-4 mx-auto' placeholder='First name' {...register("first name")}>
+          </input>
+          </div>
+          <div className='col-sm-6'>
+            <input type="text" className='form-control rounded  m-4 mx-auto' placeholder='Last name' {...register("Last name")}>
+          </input>
+          </div>
         </div>
         <input type="text" className='form-control rounded  m-4 mx-auto' placeholder='Location' {...register("Location")}>
         </input>
@@ -43,14 +42,12 @@ function MentorRegister() {
         <input type="text" className='form-control rounded  m-4 mx-auto' placeholder='Specilization' {...register("Specilization")}>
         </input>
         <div id='button'>
-        <button type="submit" className='btn btn-warning display-1 text-white' onClick={()=>{}} >
-            Login
-        </button>
-        
+          <button type="submit" className='btn btn-warning display-1 text-white' onClick={()=>{}} >
+              Login
+          </button>
         </div>
-        </form>
-        </div>
-        
+      </form>
+    </div>    
   )
   }
 

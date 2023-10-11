@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+// import { Navigate, useNavigate } from "react-router-dom";
 import './EntrepreneurDisplayPage.css';
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 
 
 export default function MentorDisplayPage() {
-    let navigate=useNavigate();
+    // let navigate=useNavigate();
     let [card,getcard]=useState({});
     useEffect(()=>{
         fetch(' http://localhost:4000/Ideas')
@@ -13,9 +13,9 @@ export default function MentorDisplayPage() {
         .then(data=>getcard(data))
         .catch(err=>console.log('error is ',err));
     },[])
-    let [moreDet,setMore]=useState(card[0]);
-    {console.log(card[1])}
-    {console.log(moreDet)}
+    // let [moreDet,setMore]=useState(card[0]);
+    // {console.log(card[1])}
+    // {console.log(moreDet)}
   return (
     <div className="container-fluid bg-info row row-cols-auto gap-2 justify-content-center p-5 m-0">
         
